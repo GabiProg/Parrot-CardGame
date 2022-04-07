@@ -1,0 +1,109 @@
+body{
+    background-color: #EEF9BF;
+}
+header h1{
+    width: 100%;
+    height: auto;
+    margin-top: 40px; 
+    margin-left: 495px; 
+    margin-bottom: 47px;
+}
+header h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+}
+.jogo{
+    margin: 0 auto;
+    width: 1023px;
+    height: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+.atras{
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #99CEAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    backface-visibility: hidden;
+   
+}
+.carta{
+    display: flex;
+    position: relative;
+    transition: all 1s linear; 
+    transform-style: preserve-3d;
+}
+.carta:hover{
+    transform: rotateY(180deg);
+}
+.frente{
+    width: 117px;
+    height: 146px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #99CEAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header-mobile{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.header-mobile h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+}
+.header-mobile h1 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 414px){
+    header h1{
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .jogo{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+    }
+}
+
+
