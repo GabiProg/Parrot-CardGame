@@ -22,6 +22,8 @@ header h1{
     width: 1023px;
     height: 326px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 34px;
 }
@@ -44,10 +46,10 @@ header h1{
 .carta{
     display: flex;
     position: relative;
+}
+.efeito{
     transition: all 1s linear; 
     transform-style: preserve-3d;
-}
-.carta:hover{
     transform: rotateY(180deg);
 }
 .frente{
